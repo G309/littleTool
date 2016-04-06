@@ -1,0 +1,5 @@
+Standard.SCS.Programming language to be used and or defined subset.
+Standard.SCS.Source Code presentation standards
+Standard.SCS.Naming conventions for components subprograms variables  and constants
+Standard.SCS.Conditions and constraints imposed on permitted coding conventions
+Standard.SCS.changeProcess

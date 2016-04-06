@@ -1,0 +1,5 @@
+SCMP.SCM Data.version
+SCMP.SCM Data.modified time
+SCMP.SCM Data.SCM Records
+SCMP.SCM Data.Software Configuration Index
+SCMP.SCM Data.Software Life Cycle Environment Configuration Index

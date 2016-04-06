@@ -1,0 +1,2 @@
+realtimeAspect.processor.protection methods
+realtimeAspect.processor.WCET

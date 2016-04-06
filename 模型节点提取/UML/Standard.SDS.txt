@@ -1,0 +1,7 @@
+Standard.SDS.Design description method
+Standard.SDS.Naming conventions to be used
+Standard.SDS.Conditions imposed on permitted design methods
+Standard.SDS.Constraints on the use of the design tools
+Standard.SDS.Constraints on design
+Standard.SDS.Complexity restrictions
+Standard.SDS.changeProcess
