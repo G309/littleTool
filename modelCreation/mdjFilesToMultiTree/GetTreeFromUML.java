@@ -42,18 +42,26 @@ public class GetTreeFromUML {
 	
 	/********以深度搜索的方式递归查找并构建树********************************/
 	/********pos——————属性对应的类所在位置，len————UML中磊的总数*******************************/
-	public void buildSubTree(JSONArray jarray,int pos,int len){
-		if(visited[pos] == -1){
+	public void buildSubTreeKey(JSONArray jarray,int pos,int len,BufferedWriter writer1,TreeNode parent){
+		if(visited[pos] == -1) {
 			JSONObject obj = jarray.getJSONObject(pos);
 			try{
+				writer1.write(getClassName(obj)+"\r\n");
+				TreeNode child=new TreeNode(getClassName(obj));
+				parent.addchild(child);
 				int attributesNum = obj.getJSONArray("attributes").length();
 				for(int j = 0;j<attributesNum;j++){
 					//获取类中各属性的名字
 					String attributesName = obj.getJSONArray("attributes").getJSONObject(j).getString("name");
-					System.out.println( getClassName(obj)+" : "+attributesName);
+					writer1.write(getClassName(obj)+" : "+attributesName+"\r\n");
+					//System.out.println( getClassName(obj)+" : "+attributesName);
 					int findresult = attributeIsClass(attributesName,jarray,len);
 					if( findresult !=-1){
-						buildSubTree(jarray,findresult,len);
+						buildSubTreeKey(jarray,findresult,len,writer1,child);
+					}
+					else{
+						TreeNode subchild = new TreeNode(attributesName);
+						child.addchild(subchild);
 					}
 				}
 				visited[pos] = 1;
@@ -62,9 +70,12 @@ public class GetTreeFromUML {
 		}
 	}
 	
+
 	public static void main(String[] args) throws IOException{
+		TreeNode root=new TreeNode("root");
+		Tree modelTree=new Tree(root);
 		GetTreeFromUML gettreefromuml = new GetTreeFromUML();
-		
+		BufferedWriter writer = new BufferedWriter(new FileWriter("E://uml_resultList.txt"));
 		File sourcefile = new File("E:\\UMLJson0.json");
 		JSONObject jsonObject = new JSONObject( new JSONTokener(new FileReader(sourcefile))); 
 		JSONArray jsonArray = jsonObject.getJSONArray("ownedElements").getJSONObject(0).getJSONArray("ownedElements");
@@ -72,12 +83,18 @@ public class GetTreeFromUML {
 		//获取整个UML模型包含的类的数量
 		int classNum = jsonArray.length()-1;
 		
-		for(int i = 1;i<=classNum;i++){
-			gettreefromuml.buildSubTree(jsonArray,i,classNum);
-			//System.out.println(gettreefromuml.getClassName(obj) +" : "+ attributesName);
+		for(int i = 1;i<=classNum;i++){	
+			gettreefromuml.buildSubTreeKey(jsonArray,i,classNum,writer,root);
 		} 
-		
+		writer.close();
+		TreeNode st = modelTree.findNode(root,"SCMP");
+		if(st!=null){
+			modelTree.bianli(st);
+		}
+		else{
+			System.out.println("不存在该节点！！！");
+		}
 	}
+}
 	
 
-}
