@@ -1,3 +1,0 @@
-SVP.Verification Task.Verification Method.review
-SVP.Verification Task.Verification Method.analysis
-SVP.Verification Task.Verification Method.testing

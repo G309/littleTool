@@ -1,9 +1,0 @@
-SDP.Software development environment.version
-SDP.Software development environment.modified time
-SDP.Software development environment.development method and tool
-SDP.Software development environment.design method and tool
-SDP.Software development environment.coding method and tool
-SDP.Software development environment.compilers
-SDP.Software development environment.linkage editors
-SDP.Software development environment.loaders
-SDP.Software development environment.hardware

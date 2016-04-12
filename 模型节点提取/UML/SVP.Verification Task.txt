@@ -1,6 +1,0 @@
-SVP.Verification Task.Verification Method
-SVP.Verification Task.Verfication Tool
-SVP.Verification Task.AuthoritionPerson
-SVP.Verification Task.ReviewContent
-SVP.Verification Task.AnalysisContent
-SVP.Verification Task.TestingContent

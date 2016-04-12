@@ -1,7 +1,0 @@
-SQAP.Activities.SQA methods.version
-SQAP.Activities.SQA methods.modified time
-SQAP.Activities.SQA methods.reviews
-SQAP.Activities.SQA methods.audits
-SQAP.Activities.SQA methods.reporting
-SQAP.Activities.SQA methods.inpections
-SQAP.Activities.SQA methods.monitoring of the software life cycle processes

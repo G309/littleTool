@@ -1,5 +1,0 @@
-Standard.SRS针对HLR.The methods to be used for developing software requirements
-Standard.SRS针对HLR.Notations to be used to express requirements
-Standard.SRS针对HLR.Constraints on the use of the tools used for requirements development
-Standard.SRS针对HLR.The method to be used to provide derived requirements to the system processes
-Standard.SRS针对HLR.changeProcess

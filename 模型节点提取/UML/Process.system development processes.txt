@@ -1,2 +1,0 @@
-Process.system development processes.comply SAE ARP-4754
-Process.system development processes.not comply SAP ARP-4754

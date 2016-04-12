@@ -1,8 +1,0 @@
-SCMP.version
-SCMP.modified time
-SCMP.environment
-SCMP.Activities
-SCMP.Transition critieria
-SCMP.SCM data
-SCMP.Supplier control
-SCMP.changeProcess

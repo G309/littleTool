@@ -1,2 +1,0 @@
-Process.system safety assessment process.comply SAE ARP-4761
-Process.system safety assessment process.not comply SAP ARP-4761

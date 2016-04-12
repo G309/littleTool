@@ -1,6 +1,0 @@
-SDP.version
-SDP.modified time
-SDP.standard
-SDP.Software life cycle
-SDP.Software development environment
-SDP.changeProcess

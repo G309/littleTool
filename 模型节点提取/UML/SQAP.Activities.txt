@@ -1,6 +1,0 @@
-SQAP.Activities.version
-SQAP.Activities.modified time
-SQAP.Activities.Acountable Person(response for)
-SQAP.Activities.SQA methods
-SQAP.Activities.Activities related to the problem reporting
-SQAP.Activities.A description of the software conformity review activity

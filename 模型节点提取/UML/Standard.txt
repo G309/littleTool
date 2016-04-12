@@ -1,5 +1,0 @@
-modified time
-version
-Standard.SRS’Î∂‘HLR
-Standard.SCS
-Standard.SDS
